@@ -1,0 +1,11 @@
+.main
+	border:2px dotted #333
+
+	&__item-container
+		border: 2px solid #ccc
+		display: flex
+
+		&--related
+			@extend .main__item-container
+			flex-direction: column
+			padding: 10px
