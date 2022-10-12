@@ -1,13 +1,14 @@
 @import "../global/global-style"
 
 .login-nav-list
-	display: flex;
-	align-items: center;
+  display: flex
+  align-items: center
 
-	&__li
-		@extend $global-li
-		font-size: 16px
-		margin-right: 10px;
+  &__li
+    { global-li }
 
-	&__a
-		@extend $global-a
+    margin-right: 10px
+    font-size: 16px
+
+  &__a
+    global-a()
