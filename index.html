@@ -48,144 +48,156 @@
       </header>
 
       <main class="main">
-        <div class="main__item-container">
-          <div class="item-img">
-            <img src="img/item.jpg" alt="" />
-            <h2 class="item-img__title">item title</h2>
+        <div class="product">
+          <img class="product__image" src="img/item.jpg" alt="" />
+
+          <h2 class="product__title">item title</h2>
+
+          <div class="product__info">
+            <h2 class="product__catch-copy">item catch-copy</h2>
+            <p class="product__discription">
+              説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+            </p>
           </div>
 
-          <div class="item-info">
-            <div class="item-info__text-container item-text">
-              <h2 class="item-text__catch-copy">item catch-copy</h2>
-              <p class="item-text__discription">
-                説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
-              </p>
+          <div class="product__value">
+            <p class="product__price">￥9,999 +tax</p>
+            <p class="product__point">100ポイント<span>(5倍)</span></p>
+          </div>
+
+          <div class="product__select">
+            <!-- 以下要改善 -->
+            <div class="item-table item-table--color">
+              <div class="item-table__title">choice color</div>
+
+              <table class="item-table__table">
+                <thead>
+                  <tr>
+                    <th class="size">Color</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+                      <label for="color-1">black</label>
+                    </td>
+                    <td>
+                      <input type="radio" name="color" id="color-1" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="color-2">white</label></td>
+                    <td>
+                      <input type="radio" name="color" id="color-2" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="color-3">red</label>
+                    </td>
+                    <td>
+                      <input type="radio" name="color" id="color-3" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
 
-            <div class="item-info__price-container item-price">
-              <p class="item-price__price">￥9,999 +tax</p>
-              <p class="item-price__point">100ポイント<span>(5倍)</span></p>
+            <div class="item-table item-table--size">
+              <div class="item-table__title">choice size</div>
+
+              <table class="item-table__table">
+                <thead>
+                  <tr>
+                    <th>Size</th>
+                    <th>Chest</th>
+                    <th>Weist</th>
+                    <th>Height</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th>S</th>
+                    <td>99 ～ 99</td>
+                    <td>99 ～ 99</td>
+                    <td>99 ～ 99</td>
+                    <td>
+                      <input type="radio" name="size" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>M</th>
+                    <td>99 ～ 99</td>
+                    <td>99 ～ 99</td>
+                    <td>99 ～ 99</td>
+                    <td>
+                      <input type="radio" name="size" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>L</th>
+                    <td>99 ～ 99</td>
+                    <td>99 ～ 99</td>
+                    <td>99 ～ 99</td>
+                    <td>
+                      <input type="radio" name="size" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
 
-            <div class="item-info__table-container">
-              <div class="item-table item-table--color">
-                <div class="item-table__title">choice color</div>
-                <table class="item-table__table">
-                  <thead>
-                    <tr>
-                      <th class="size">Color</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <label for="color-1">black</label>
-                      </td>
-                      <td>
-                        <input type="radio" name="color" id="color-1" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><label for="color-2">white</label></td>
-                      <td>
-                        <input type="radio" name="color" id="color-2" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label for="color-3">red</label>
-                      </td>
-                      <td>
-                        <input type="radio" name="color" id="color-3" />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="item-table item-table--size">
-                <div class="item-table__title">choice size</div>
-                <table class="item-table__table">
-                  <thead>
-                    <tr>
-                      <th>Size</th>
-                      <th>Chest</th>
-                      <th>Weist</th>
-                      <th>Height</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>S</th>
-                      <td>99 ～ 99</td>
-                      <td>99 ～ 99</td>
-                      <td>99 ～ 99</td>
-                      <td>
-                        <input type="radio" name="size" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>M</th>
-                      <td>99 ～ 99</td>
-                      <td>99 ～ 99</td>
-                      <td>99 ～ 99</td>
-                      <td>
-                        <input type="radio" name="size" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>L</th>
-                      <td>99 ～ 99</td>
-                      <td>99 ～ 99</td>
-                      <td>99 ～ 99</td>
-                      <td>
-                        <input type="radio" name="size" />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="item-table item-table--color">
-                <div class="item-table__title">choice size</div>
-                <table class="item-table__table">
-                  <thead>
-                    <tr>
-                      <th>hoge</th>
-                      <th>any</th>
-                      <th>any</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>hoge</th>
-                      <td>any</td>
-                      <th>any</th>
+            <div class="item-table item-table--color">
+              <div class="item-table__title">choice size</div>
 
-                      <td>
-                        <input type="radio" name="size" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>hoge</th>
-                      <td>any</td>
-                      <th>any</th>
-                      <td>
-                        <input type="radio" name="size" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>hoge</th>
-                      <td>any</td>
-                      <th>any</th>
-                      <td>
-                        <input type="radio" name="size" />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <table class="item-table__table">
+                <thead>
+                  <tr>
+                    <th>hoge</th>
+                    <th>any</th>
+                    <th>any</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th>hoge</th>
+                    <td>any</td>
+                    <th>any</th>
+
+                    <td>
+                      <input type="radio" name="size" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>hoge</th>
+                    <td>any</td>
+                    <th>any</th>
+                    <td>
+                      <input type="radio" name="size" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>hoge</th>
+                    <td>any</td>
+                    <th>any</th>
+                    <td>
+                      <input type="radio" name="size" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+            <!-- 変更予定
+              <div class="product__select-item"></div>
+              <div class="product__select-item"></div>
+              <div class="product__select-item"></div>
+            -->
           </div>
         </div>
+
         <div class="main__item-container--related related-items">
           <h2 class="related-items__title">関連商品</h2>
           <div class="related-items__list-container">
@@ -203,6 +215,7 @@
                 </p>
               </div>
             </div>
+
             <div class="related-items__list-container__item">
               <div class="item-img">
                 <img src="img/item.jpg" alt="" />
@@ -217,6 +230,7 @@
                 </p>
               </div>
             </div>
+
             <div class="related-items__list-container__item">
               <div class="item-img">
                 <img src="img/item.jpg" alt="" />
@@ -231,6 +245,7 @@
                 </p>
               </div>
             </div>
+
             <div class="related-items__list-container__item">
               <div class="item-img">
                 <img src="img/item.jpg" alt="" />
@@ -248,6 +263,7 @@
           </div>
         </div>
       </main>
+
       <footer class="content__footer footer">
         <div class="footer__nav">
           <ul class="page-nav-list">

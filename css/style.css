@@ -122,34 +122,6 @@ html {
   max-width: 400px;
   margin-right: 60px;
 }
-.item-info__text-container {
-  padding: 10px;
-  background: #808080;
-}
-.item-info__table-container {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  padding: 15px;
-  background: #111;
-}
-.item-info__price-container {
-  padding: 10px;
-  background: #ccc;
-}
-.item-price {
-  display: flex;
-  align-items: center;
-  border: 2px solid #111;
-}
-.item-price__price {
-  font-size: 16px;
-}
-.item-price__point {
-  margin: 4px 0 0 10px;
-  font-size: 12px;
-  color: #f00;
-}
 .item-table {
   color: #fff;
 }
@@ -190,39 +162,56 @@ html {
 .item-text__discription--related {
   font-size: 8px;
 }
-.login-nav-list {
-  display: flex;
-  align-items: center;
-}
-.login-nav-list__li {
-  padding: 4px 6px;
-  list-style: none;
-  cursor: pointer;
-  background: #888;
-  border: 1px solid #888;
-  border-radius: 4px;
-  margin-right: 10px;
-  font-size: 16px;
-}
-.login-nav-list__li:hover {
-  background: #555;
-}
-.login-nav-list__a {
-  color: #ccc;
-  text-decoration: none;
-}
 .main {
   border: 2px dotted #333;
 }
-.main__item-container,
-.main__item-container--related {
-  display: flex;
+.main .product {
+  display: grid;
+  grid-template: "image info" auto "image value" auto "image select" auto "image ." 1fr /* 右側要素の高さをコンテンツ幅にして上部にまとめるため（他に良いやり方がある？） */ "title ." auto/auto 1fr;
   border: 2px solid #ccc;
 }
-.main__item-container--related,
-.main__item-container--related--related {
+.main .product__image {
+  flex-shrink: 0;
+  grid-area: image;
+  max-width: 400px;
+}
+.main .product__title {
+  grid-area: title;
+  font-size: 18px;
+  text-align: center;
+}
+.main .product__info {
+  display: flex;
   flex-direction: column;
+  grid-area: info;
+  gap: 8px;
+  padding: 18px 10px 10px;
+  background: #808080;
+}
+.main .product__catch-copy {
+  font-size: 16px;
+}
+.main .product__value {
+  display: flex;
+  grid-area: value;
+  gap: 10px;
+  align-items: flex-end;
   padding: 10px;
+  background: #ccc;
+  border: 2px solid #111;
+}
+.main .product__price {
+  font-size: 16px;
+}
+.main .product__point {
+  font-size: 12px;
+  color: #f00;
+}
+.main .product__select {
+  display: flex;
+  grid-area: select;
+  padding: 15px;
+  background: #111;
 }
 .nav-button {
   padding: 4px 6px;
@@ -237,27 +226,6 @@ html {
 }
 .nav-button:hover {
   background: #555;
-}
-.page-nav-list {
-  display: flex;
-  align-items: center;
-}
-.page-nav-list__li {
-  padding: 4px 6px;
-  list-style: none;
-  cursor: pointer;
-  background: #888;
-  border: 1px solid #888;
-  border-radius: 4px;
-  margin-right: 16px;
-  font-size: 16px;
-}
-.page-nav-list__li:hover {
-  background: #555;
-}
-.page-nav-list__a {
-  color: #ccc;
-  text-decoration: none;
 }
 .related-items__title {
   margin-left: 10px;
