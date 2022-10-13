@@ -59,14 +59,18 @@ html {
   width: 100%;
 }
 .footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
   padding: 10px;
   background: #ccc;
   border: 1px solid #444;
 }
 .footer__nav {
   display: flex;
+  gap: 16px;
   justify-content: center;
-  margin-bottom: 10px;
 }
 .footer__copyright {
   font-size: 12px;
