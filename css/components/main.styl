@@ -56,11 +56,18 @@
 
       // item-table.styl
 
-  // &__item-container
-  //   display: flex
+  .related
+    display: flex
+    flex-direction: column
+    gap: 8px
+    padding: 10px 20px
+    border: 2px solid #ccc
 
-  //   &--related
-  //     @extend .main__item-container
+    &__title
+      font-size: 16px
 
-  //     flex-direction: column
-  //     padding: 10px
+    &__items
+      display: flex
+      gap: 16px
+
+      // related_item.styl
