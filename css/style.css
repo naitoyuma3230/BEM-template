@@ -53,10 +53,9 @@ html {
   max-width: 900px;
   margin: 0 auto;
 }
-.content__footer {
+.content .footer {
   position: sticky;
-  top: 100vh;
-  width: 100%;
+  bottom: 0;
 }
 .footer {
   display: flex;
@@ -182,6 +181,22 @@ html {
   color: #ccc;
   background: #316745;
 }
+.product-item {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: center;
+  width: 104px;
+}
+.product-item__title {
+  font-size: 10px;
+}
+.product-item__catch-copy {
+  font-size: 10px;
+}
+.product-item__discription {
+  font-size: 8px;
+}
 .product {
   display: grid;
   grid-template: "image info" auto "image value" auto "image select" auto "image ." 1fr /* 右側要素の高さをコンテンツ幅にして上部にまとめるため（他に良いやり方がある？） */ "title ." auto/auto 1fr;
@@ -229,22 +244,6 @@ html {
   grid-area: select;
   padding: 15px;
   background: #111;
-}
-.product-item {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  align-items: center;
-  width: 104px;
-}
-.product-item__title {
-  font-size: 10px;
-}
-.product-item__catch-copy {
-  font-size: 10px;
-}
-.product-item__discription {
-  font-size: 8px;
 }
 .related {
   display: flex;
