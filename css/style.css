@@ -139,68 +139,6 @@ html {
 .main {
   border: 2px dotted #333;
 }
-.main .product {
-  display: grid;
-  grid-template: "image info" auto "image value" auto "image select" auto "image ." 1fr /* 右側要素の高さをコンテンツ幅にして上部にまとめるため（他に良いやり方がある？） */ "title ." auto/auto 1fr;
-  border: 2px solid #ccc;
-}
-.main .product__image {
-  flex-shrink: 0;
-  grid-area: image;
-  max-width: 400px;
-}
-.main .product__title {
-  grid-area: title;
-  font-size: 18px;
-  text-align: center;
-}
-.main .product__info {
-  display: flex;
-  flex-direction: column;
-  grid-area: info;
-  gap: 8px;
-  padding: 18px 10px 10px;
-  background: #808080;
-}
-.main .product__catch-copy {
-  font-size: 16px;
-}
-.main .product__value {
-  display: flex;
-  grid-area: value;
-  gap: 10px;
-  align-items: flex-end;
-  padding: 10px;
-  background: #ccc;
-  border: 2px solid #111;
-}
-.main .product__price {
-  font-size: 16px;
-}
-.main .product__point {
-  font-size: 12px;
-  color: #f00;
-}
-.main .product__select {
-  display: flex;
-  grid-area: select;
-  padding: 15px;
-  background: #111;
-}
-.main .related {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 10px 20px;
-  border: 2px solid #ccc;
-}
-.main .related__title {
-  font-size: 16px;
-}
-.main .related__items {
-  display: flex;
-  gap: 16px;
-}
 .nav-button {
   padding: 4px 6px;
   font-size: 16px;
@@ -214,6 +152,54 @@ html {
 }
 .nav-button:hover {
   background: #555;
+}
+.product {
+  display: grid;
+  grid-template: "image info" auto "image value" auto "image select" auto "image ." 1fr /* 右側要素の高さをコンテンツ幅にして上部にまとめるため（他に良いやり方がある？） */ "title ." auto/auto 1fr;
+  border: 2px solid #ccc;
+}
+.product__image {
+  flex-shrink: 0;
+  grid-area: image;
+  max-width: 400px;
+}
+.product__title {
+  grid-area: title;
+  font-size: 18px;
+  text-align: center;
+}
+.product__info {
+  display: flex;
+  flex-direction: column;
+  grid-area: info;
+  gap: 8px;
+  padding: 18px 10px 10px;
+  background: #808080;
+}
+.product__catch-copy {
+  font-size: 16px;
+}
+.product__value {
+  display: flex;
+  grid-area: value;
+  gap: 10px;
+  align-items: flex-end;
+  padding: 10px;
+  background: #ccc;
+  border: 2px solid #111;
+}
+.product__price {
+  font-size: 16px;
+}
+.product__point {
+  font-size: 12px;
+  color: #f00;
+}
+.product__select {
+  display: flex;
+  grid-area: select;
+  padding: 15px;
+  background: #111;
 }
 .related-item {
   display: flex;
@@ -230,4 +216,18 @@ html {
 }
 .related-item__discription {
   font-size: 8px;
+}
+.related {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+}
+.related__title {
+  font-size: 16px;
+}
+.related__items {
+  display: flex;
+  gap: 16px;
 }
