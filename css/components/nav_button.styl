@@ -1,0 +1,35 @@
+.nav-button
+  position: relative
+  padding: 4px 6px
+  font-size: 16px
+  color: #ccc
+  text-decoration: none
+  list-style: none
+  cursor: pointer
+  background: #888
+  border: 1px solid #888
+  border-radius: 4px
+
+  &:hover
+    background: #555
+
+  &.is-new::after
+    position: absolute
+    top: -7px
+    right: -7px
+    display: block
+    width: 14px
+    height: 14px
+    content: ""
+    background: #d7003a
+    border-radius: 50%
+
+  &--green
+    @extend .nav-button
+
+    color: #888
+    background: #bed3ca
+
+    &:hover
+      color: #ccc
+      background: #316745

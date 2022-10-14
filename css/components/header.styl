@@ -1,14 +1,39 @@
 .header
-	display: flex
-	flex-direction: column
+  display: flex
+  flex-direction: column
+  gap: 40px
+  padding: 20px
+  border-bottom: solid 1px #c3c3c3
 
-	&__title-wrapper
-		padding: 20px 0
-		display: flex
-		justify-content: center
+  .site-title
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-decoration: none
 
-	&__nav-wrapper
-		padding:20px
-		display: flex
-		align-items: center
-		justify-content: space-between
+    &__logo-img
+      width: 80px
+      height: 80px
+      border-radius: 50%
+
+    &__text
+      font-size: 24px
+
+  .header-nav
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    nav-list(gap)
+      display: flex
+      gap: gap
+      align-items: center
+      justify-content: space-between
+
+    &__page
+      nav-list(16px)
+
+    &__login
+      nav-list(10px)
+
+      // .nav_button.styl
