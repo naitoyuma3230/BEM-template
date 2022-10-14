@@ -230,20 +230,20 @@ html {
   padding: 15px;
   background: #111;
 }
-.related-item {
+.product-item {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   align-items: center;
   width: 104px;
 }
-.related-item__title {
+.product-item__title {
   font-size: 10px;
 }
-.related-item__catch-copy {
+.product-item__catch-copy {
   font-size: 10px;
 }
-.related-item__discription {
+.product-item__discription {
   font-size: 8px;
 }
 .related {
