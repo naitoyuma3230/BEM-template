@@ -72,6 +72,10 @@ html {
   gap: 16px;
   justify-content: center;
 }
+.footer__nav .nav-button {
+  color: #888;
+  background: #eee;
+}
 .footer__copyright {
   font-size: 12px;
   text-align: center;
@@ -139,7 +143,9 @@ html {
 .main {
   border: 2px dotted #333;
 }
-.nav-button {
+.nav-button,
+.nav-button--green {
+  position: relative;
   padding: 4px 6px;
   font-size: 16px;
   color: #ccc;
@@ -150,8 +156,31 @@ html {
   border: 1px solid #888;
   border-radius: 4px;
 }
-.nav-button:hover {
+.nav-button:hover,
+.nav-button--green:hover {
   background: #555;
+}
+.nav-button.is-new::after,
+.nav-button--green.is-new::after {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  display: block;
+  width: 14px;
+  height: 14px;
+  content: "";
+  background: #d7003a;
+  border-radius: 50%;
+}
+.nav-button--green,
+.nav-button--green--green {
+  color: #888;
+  background: #bed3ca;
+}
+.nav-button--green:hover,
+.nav-button--green--green:hover {
+  color: #ccc;
+  background: #316745;
 }
 .product {
   display: grid;
